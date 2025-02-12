@@ -1,0 +1,5 @@
+C:\Users\Alunos\Documents\kauany\GerenciadorDeTarefas\GerenciadorDeTarefas\obj\Debug\net9.0\GerenciadorDeTarefas.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Alunos\Documents\kauany\GerenciadorDeTarefas\GerenciadorDeTarefas\obj\Debug\net9.0\GerenciadorDeTarefas.AssemblyInfoInputs.cache
+C:\Users\Alunos\Documents\kauany\GerenciadorDeTarefas\GerenciadorDeTarefas\obj\Debug\net9.0\GerenciadorDeTarefas.AssemblyInfo.cs
+C:\Users\Alunos\Documents\kauany\GerenciadorDeTarefas\GerenciadorDeTarefas\obj\Debug\net9.0\GerenciadorDeTarefas.csproj.CoreCompileInputs.cache
+C:\Users\Alunos\Documents\kauany\GerenciadorDeTarefas\GerenciadorDeTarefas\obj\Debug\net9.0\GerenciadorDeTarefas.sourcelink.json

@@ -1,0 +1,7 @@
+namespace GerenciadorTarefa
+{
+    class Gerenciar 
+    { 
+        
+    }
+}
