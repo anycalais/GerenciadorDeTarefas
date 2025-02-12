@@ -13,8 +13,9 @@ namespace Layout
             Console.Clear();
             Console.ForegroundColor = ConsoleColor.White;
 
-            string titulo = "GERENCIADOR DE TAREFAS";
+          string titulo = "GERENCIADOR DE TAREFAS";
             int largura = 40;
+
        
     }
 }

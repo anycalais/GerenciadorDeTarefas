@@ -1,6 +1,8 @@
+using Layout;
+
 namespace Tarefa
 {
-    class Tarefa
+    class Tarefas
     {
         public int Id { get; set; }
         public string Descricao { get; set; }
@@ -15,7 +17,7 @@ namespace Tarefa
 
         public void ExibirTarefa()
         {
-            Console.WriteLine($"[{(Concluida ? "X" : " ")}] - ID: {Id} - {Descricao}");
+            Console.WriteLine($"[{(Concluida ? "X" : " ")}] - ID: {Id} - {Descricao}", ConsoleColor.Yellow);
         }
     }
 }
