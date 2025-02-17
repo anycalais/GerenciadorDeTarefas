@@ -10,12 +10,21 @@ namespace Layout
         }
         public static void ImprimirCabecalho()
         {
-            Console.Clear();
-            Console.ForegroundColor = ConsoleColor.White;
-
-          string titulo = "GERENCIADOR DE TAREFAS";
+            string titulo = "Gerenciador de Tarefas";
             int largura = 40;
+            string borda = new string('=', largura);
+            int posicaoInicial = (Console.WindowWidth - largura - 2) / 2;
 
-       
+
+            string linhaBorda = new string(' ', posicaoInicial) + "╔" + borda + "╗";
+            string linhaTitulo = new string(' ', posicaoInicial) + "║" + titulo.PadLeft((largura + titulo.Length) / 2).PadRight(largura) + "║";
+            string linhaInferior = new string(' ', posicaoInicial) + "╚" + borda + "╝";
+
+            Console.WriteLine(linhaBorda);
+            Console.WriteLine(linhaTitulo);
+            Console.WriteLine(linhaInferior);
+
+
+        }
     }
 }

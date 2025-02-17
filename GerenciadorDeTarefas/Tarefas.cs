@@ -1,23 +1,23 @@
 using Layout;
 
-namespace Tarefa
+namespace Tarefas
 {
-    class Tarefas
+    public class Tarefa
     {
-        public int Id { get; set; }
+        public int Id { get; private set; }
         public string Descricao { get; set; }
         public bool Concluida { get; set; }
 
-        public Tarefa(int id, string mensagem)
+        public Tarefa(int id, string descricao)
         {
             Id = id;
-            Descricao = mensagem;
+            Descricao = descricao;
             Concluida = false;
         }
 
         public void ExibirTarefa()
         {
-            Console.WriteLine($"[{(Concluida ? "X" : " ")}] - ID: {Id} - {Descricao}", ConsoleColor.Yellow);
+            Formatacao.Cor($"\n\t[{(Concluida ? "X" : " ")}] id: {Id} - {Descricao}\n", ConsoleColor.Yellow);
         }
     }
 }

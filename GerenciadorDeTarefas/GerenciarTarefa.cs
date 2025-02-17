@@ -1,44 +1,48 @@
 using Layout;
 using Tarefas;
 
-namespace GerenciarTarefa
+namespace GerenciadorTarefa
 {
-    class Gerenciador
+    class GerenciarTarefa
     {
-        public void AdicionarTarefa(string Descricao)
+        private List<Tarefa> listaDeTarefas = new List<Tarefa>();
+        private int contadorId = 1;
+
+        public void AdicionarTarefa(string descricao)
         {
             listaDeTarefas.Add(new Tarefa(contadorId, descricao));
             contadorId++;
-            Formatacao.Cor("Tarefa adicionada com sucesso!\n", ConsoleColor.Green)
-
+            Formatacao.Cor("Tarefa adicionada!\n", ConsoleColor.Green);
         }
+
         public void ConcluirTarefa(int id)
         {
-            foreach (var tarefa in listaDeTarefas) 
+            foreach (var tarefa in listaDeTarefas)
             {
                 if (tarefa.Id == id)
                 {
                     tarefa.Concluida = true;
                     Formatacao.Cor("Tarefa concluída!\n", ConsoleColor.Green);
                     return;
-                }   
+                }
             }
             Formatacao.Cor("Tarefa não encontrada!\n", ConsoleColor.Red);
         }
-        public void ListarTarefas()
+
+        public void ListarTarefa()
         {
-            Formatacao.Cor("Tarefas: ", ConsoleColor.Yellow);
+            Formatacao.Cor("Tarefas:", ConsoleColor.White);
             foreach (var tarefa in listaDeTarefas)
             {
-              tarefa.ExibirTarefa();
+                tarefa.ExibirTarefa();
             }
-            ConsoleWriteLine();
+            Console.WriteLine();
         }
+
         public void RemoverTarefa(int id)
         {
             listaDeTarefas.RemoveAll(t => t.Id == id);
-            Formatacao.Cor("Tarefa removida com sucesso!\n", ConsoleColor.Red);
-        
+            Formatacao.Cor("Tarefa removida!", ConsoleColor.Red);
         }
     }
 }
